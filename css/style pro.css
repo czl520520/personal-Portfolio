@@ -1,0 +1,139 @@
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+    margin: 0;
+ }
+
+ .hd_navigation a {
+   color: white;
+   font-weight: 300;
+   letter-spacing: 2px;
+   text-decoration: none;
+   background: rgb(95, 99, 96);
+   padding: 20px 5px;
+   display: inline-block;
+   width: 100%;
+   height: 30px;
+   text-align: center;
+}
+
+.hd_navigation a:hover {
+   background: rgba(238, 13, 13, 0.75);
+}
+
+.head {
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 0 3em 1.5em;
+   box-sizing: border-box;
+}
+
+.hd_navigation ul {
+   border: 1px solid rgb(95, 99, 96);
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   display: flex;
+}
+
+.hd_navigation li {
+   flex: 3;    
+}
+
+.hd_navigation .media {
+   flex: 1;
+}
+    
+@media all and (max-width: 1000px) {
+    .hd_navigation ul {
+       flex-wrap: wrap;
+    }
+    
+    .hd_navigation li {
+       flex: 1 1 50%;
+    }
+ 
+    .hd_navigation .media {
+       flex: 1 1 33.33%;
+    }
+ }
+ 
+ @media all and (max-width: 480px) {
+    .hd_navigation li {
+       flex-basis: 100%;
+    }
+ 
+    .hd_navigation .media {
+       flex-basis: 50%;
+    }
+ }
+
+
+
+
+#pageContent {
+    max-width: 1000px;
+    margin: auto;
+    border: none;
+}
+main {
+	float: left;
+	width: 60%;
+}
+aside {
+	float: right;
+	width: 30%;
+}
+article {
+    border-bottom: 2px dotted #999;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+article h2 {
+    font-weight: normal;
+    margin-bottom: 12px;
+}
+
+
+aside > div {
+	margin: 10px auto;
+
+	min-height: 100px;
+}
+
+
+body > section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 30px 0px;
+    border-bottom: 1px solid #999;
+    color: #333;
+}
+
+@media screen and (max-width: 1000px) {
+	body > section {
+		padding: 30px 20px;
+	}
+}
+@media screen and (max-width: 600px) {
+	main {
+		float: none;
+		width: 100%;
+	}
+	aside {
+		float: none;
+		width: 100%;
+	}
+
+}
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: #3a4660;
+    color:#c9af98;
+    width: 100%;
+    text-align: center;
+    line-height:25px;
+}
